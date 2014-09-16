@@ -12,11 +12,9 @@
 
 get_header(); ?>
 
-	<div id="primary" class="content-area row row-offcanvas row-offcanvas-right">
-		<main id="main" class="site-main col-xs-12 col-sm-9" role="main">
-            <p class="pull-right visible-xs">
-                <button type="button" class="btn btn-primary btn-xs" data-toggle="offcanvas">Toggle nav</button>
-            </p>
+	<div id="primary" class="content-area">
+		<main id="main" class="site-main" role="main">
+
 			<?php while ( have_posts() ) : the_post(); ?>
 
 				<?php get_template_part( 'content', 'page' ); ?>
@@ -33,5 +31,4 @@ get_header(); ?>
 		</main><!-- #main -->
 	</div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
