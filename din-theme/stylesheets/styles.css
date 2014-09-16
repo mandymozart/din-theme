@@ -10,6 +10,11 @@
  1. Lists
  2. Widgets
  2.1. Language Selector
+ 3. Navigations
+ 3.1. On Site Navigation
+ 3.1.1. Back To Top Link
+ 3.1.2. Toggle Offcanvas
+ 3.2. Navigation Bar
  */
 
 /* 0. Layout */
@@ -25,6 +30,23 @@ nav ul {
 
 /* 2. Widgets */
 /* 2.1. Langauge Selector (Navigaton) */
+#polylang-4 ul {
+    list-style: none;
+    margin-top: 32px;
+}
 
+/* 3. Navigations */
+/* 3.1. On Site Naviation */
+/* 3.1.1. Back To Top */
+#onsite {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+}
+/* 3.1.2. Toggle Offcanvas */
 
-
+/* 3.2 Navigation Bar */
+.navbar {
+    background: #fff;
+    border-bottom: solid 1px #96c8f0;
+}

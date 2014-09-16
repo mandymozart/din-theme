@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="PublishConfigData" serverName="dev-envaris.shalomsalon.de din-theme">
+    <serverData>
+      <paths name="dev-envaris.shalomsalon.de din-theme">
+        <serverdata>
+          <mappings>
+            <mapping deploy="/wordpress/wp-content/themes/din-theme" local="$PROJECT_DIR$/din-theme" web="/" />
+          </mappings>
+        </serverdata>
+      </paths>
+    </serverData>
+  </component>
+</project>
+

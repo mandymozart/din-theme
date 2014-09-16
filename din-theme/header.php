@@ -28,7 +28,7 @@
 
 <body <?php body_class(); ?>>
 
-    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+    <div class="navbar navbar-fixed-top" role="navigation">
         <div class="container">
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
@@ -37,18 +37,19 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#mmenu"><?php bloginfo( 'name' ); ?></a>
+                <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><?php bloginfo( 'name' ); ?></a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
+                    <li class="active"></li>
 
                     <li><a href="#contact">Contact</a></li>
-                    <?php
+                    <li><?php
                     if(is_active_sidebar('language-selector')){
                         dynamic_sidebar('language-selector');
                     }
                     ?>
+                    </li>
                 </ul>
             </div><!--/.nav-collapse -->
         </div>
