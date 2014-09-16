@@ -1,32 +1,9 @@
-@font-face{
-  font-family:"DINNextRoundedLTW01-Bol";
-  src:url("") format("eot");}
-@font-face{
-  font-family:"DINNextRoundedLTW01-Bol";
-  src:url("");
-  src:url("") format("svg");
+@charset "UTF-8";
+@font-face {
+    font-family: "DINNextLight";
+    src: url('/fonts/dinnextrounded/DINNextRoundedLTW01-Lig.woff?1410799474') format('woff'), url('/fonts/dinnextrounded/DINNextRoundedLTW01-Lig.ttf?1410799474') format('truetype');
 }
-@font-face{
-  font-family:"DINNextRoundedLTW01-Lig";
-  src:url("fonts/DINNextRoundedLTW01-Lig.woff") format("woff");}
-@font-face{
-  font-family:"DINNextRoundedLTW01-Lig";
-  src:url("");
-  src:url("") format("svg");
-}
-@font-face{
-  font-family:"DINNextRoundedLTW01-Med";
-  src:url("fonts/DINNextRoundedLTW01-Med.woff") format("woff");}
-@font-face{
-  font-family:"DINNextRoundedLTW01-Med";
-  src:url("");
-  src:url("") format("svg");
-}
-@font-face{
-  font-family:"DINNextRoundedLTW01-Reg";
-  src:url("") format("eot");}
-@font-face{
-  font-family:"DINNextRoundedLTW01-Reg";
-  src:url("");
-  src:url("") format("svg");
+@font-face {
+    font-family: "DINNextMedium";
+    src: url('/fonts/dinnextrounded/DINNextRoundedLTW01-Lig.woff?1410799474') format('woff'), url('/fonts/dinnextrounded/DINNextRoundedLTW01-Lig.ttf?1410799474') format('truetype');
 }
