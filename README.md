@@ -1,13 +1,11 @@
 DIN Theme for Wordpress
 ===
 
-
+Clean Bootstrap Word Press Theme
 
 Getting Started
 ---------------
 
 
-Helpful Commandline Tools
----------------
-$ compass create din-theme -r bootstrap-sass --using bootstrap
+
 
