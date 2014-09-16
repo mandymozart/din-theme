@@ -16,24 +16,27 @@
             <li><a href="#top"><span class="fa fa-chevron-up"></span></a></li>
         </ul>
     </nav>
-    <footer class="footer container" id="footer">
+    <footer class="footer container-fluid" id="footer">
             <nav id="footer-nav" class="row">
-                <p><img class="svg" src="<?php echo get_stylesheet_directory_uri(); ?>/assets/images/envaris-white.svg" height="20" width="220" />
-                    Wir freunen uns auf Ihren Anruf: +49 30-288-8493-110</p>
+                <div id="footer-header-widget">
+                    <?php
+                    if(is_active_sidebar('footer-header-widget')){
+                        dynamic_sidebar('footer-header-widget');
+                    }
+                    ?>
+                </div>
+                <p><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/envaris.png" /></p>
                 <div class="col-lg-3">
-                    <h3>Über Uns</h3>
                     <?php if ( has_nav_menu( 'footer_ltr_one' ) ) : ?>
                         <?php wp_nav_menu( array( 'theme_location' => 'footer_ltr_one' ) ); ?>
                     <?php endif; ?>
                 </div>
                 <div class="col-lg-3">
-                    <h3>Leistungen</h3>
                     <?php if ( has_nav_menu( 'footer_ltr_two' ) ) : ?>
                         <?php wp_nav_menu( array( 'theme_location' => 'footer_ltr_two' ) ); ?>
                     <?php endif; ?>
                 </div>
                 <div class="col-lg-3">
-                    <h3>Impressum</h3>
                     <?php if ( has_nav_menu( 'footer_ltr_three' ) ) : ?>
                         <?php wp_nav_menu( array( 'theme_location' => 'footer_ltr_three' ) ); ?>
                     <?php endif; ?>

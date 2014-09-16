@@ -15,6 +15,10 @@
  3.1.1. Back To Top Link
  3.1.2. Toggle Offcanvas
  3.2. Navigation Bar
+ 3.3. Footer Navigation
+ 4. Typography
+ 4.1. Styles
+ 4.2. Headings
  */
 
 /* 0. Layout */
@@ -38,15 +42,53 @@ nav ul {
 /* 3. Navigations */
 /* 3.1. On Site Naviation */
 /* 3.1.1. Back To Top */
-#onsite {
+#nav-onsite {
     position: fixed;
-    right: 20px;
-    bottom: 20px;
+    right: 15px;
+    bottom: 25px;
+}
+#nav-onsite ul {
+    margin:0;
+}
+#nav-onsite li a {
+    padding: 16px 33px 16px 33px;
+    background: #fff;
 }
 /* 3.1.2. Toggle Offcanvas */
 
-/* 3.2 Navigation Bar */
+/* 3.2. Navigation Bar */
 .navbar {
     background: #fff;
-    border-bottom: solid 1px #96c8f0;
+    border-bottom: solid 1px #5ac4f0;
+}
+
+/* 3.3. Footer Navigation */
+.footer {
+    background: #5ac4f0;
+}
+.footer a{
+    color: #fff;
+}
+.footer a:hover,
+.footer a:focus {
+    color: #fafa96;
+}
+
+/* 4. Typography */
+/* 4.1. Styles */
+b {
+    font-family: DINNextMedium;
+}
+/* 4.2. Headings */
+h1,h2,h3,h4,h5,h6 {
+    font-family: DINNextMedium;
+    text-transform: uppercase;
+}
+/* Links */
+a {
+    color: #5ac4f0;
+}
+a:hover,
+a:focus {
+    color: #ccc;
 }
