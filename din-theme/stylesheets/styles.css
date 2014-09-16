@@ -3,4 +3,28 @@
 @import "bootstrap.min.css";
 @import "bootstrap-theme.css";
 @import "bootstrap-offcanvas.css";
+@import "layout.css";
+
+/* Contents
+ 0. Layout
+ 1. Lists
+ 2. Widgets
+ 2.1. Language Selector
+ */
+
+/* 0. Layout */
+#content {
+    margin-top:100px;
+}
+
+/* 1. Lists */
+nav ul {
+    list-style: none;
+    padding-left:0;
+}
+
+/* 2. Widgets */
+/* 2.1. Langauge Selector (Navigaton) */
+
+
 

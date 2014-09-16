@@ -44,13 +44,13 @@
                     <li class="active"><a href="<?php echo esc_url( home_url( '/' ) ); ?>">Home</a></li>
 
                     <li><a href="#contact">Contact</a></li>
+                    <?php
+                    if(is_active_sidebar('language-selector')){
+                        dynamic_sidebar('language-selector');
+                    }
+                    ?>
                 </ul>
             </div><!--/.nav-collapse -->
-            <?php
-            if(is_active_sidebar('language-selector')){
-                dynamic_sidebar('language-selector');
-            }
-            ?>
         </div>
     </div>
 

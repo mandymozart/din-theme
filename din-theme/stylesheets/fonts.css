@@ -1,9 +1,9 @@
 @charset "UTF-8";
 @font-face {
     font-family: "DINNextLight";
-    src: url('/fonts/dinnextrounded/DINNextRoundedLTW01-Lig.woff?1410799474') format('woff'), url('/fonts/dinnextrounded/DINNextRoundedLTW01-Lig.ttf?1410799474') format('truetype');
+    src: url('/wp-content/themes/din-theme/fonts/dinnextrounded/DINNextRoundedLTW01-Lig.woff?1410799474') format('woff'), url('/fonts/dinnextrounded/DINNextRoundedLTW01-Lig.ttf?1410799474') format('truetype');
 }
 @font-face {
     font-family: "DINNextMedium";
-    src: url('/fonts/dinnextrounded/DINNextRoundedLTW01-Lig.woff?1410799474') format('woff'), url('/fonts/dinnextrounded/DINNextRoundedLTW01-Lig.ttf?1410799474') format('truetype');
+    src: url('/wp-content/themes/din-theme/fonts/dinnextrounded/DINNextRoundedLTW01-Lig.woff?1410799474') format('woff'), url('/fonts/dinnextrounded/DINNextRoundedLTW01-Lig.ttf?1410799474') format('truetype');
 }
