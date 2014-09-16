@@ -85,6 +85,24 @@ function din_theme_widgets_init() {
 		'before_title'  => '<h1 class="widget-title">',
 		'after_title'   => '</h1>',
 	) );
+    register_sidebar( array(
+        'name' => 'Footer Widget Area',
+        'id' => 'footer-widget',
+        'description' => 'Appears in the footer area on the right, or last position',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '<h3 class="widget-title">',
+        'after_title' => '</h3>',
+    ) );
+    register_sidebar( array(
+        'name' => 'Language Selector Widget Area',
+        'id' => 'language-selector',
+        'description' => 'Appears in the header nav area',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '',
+        'after_title' => '',
+    ) );
 }
 add_action( 'widgets_init', 'din_theme_widgets_init' );
 
