@@ -17,42 +17,46 @@
         </ul>
     </nav>
     <footer class="footer container-fluid" id="footer">
-            <nav id="footer-nav" class="row">
-                <div id="footer-header-widget">
-                    <?php
-                    if(is_active_sidebar('footer-header-widget')){
-                        dynamic_sidebar('footer-header-widget');
-                    }
-                    ?>
-                </div>
-                <p><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/envaris.png" /></p>
-                <div class="col-lg-3">
-                    <?php if ( has_nav_menu( 'footer_ltr_one' ) ) : ?>
-                        <?php wp_nav_menu( array( 'theme_location' => 'footer_ltr_one' ) ); ?>
-                    <?php endif; ?>
-                </div>
-                <div class="col-lg-3">
-                    <?php if ( has_nav_menu( 'footer_ltr_two' ) ) : ?>
-                        <?php wp_nav_menu( array( 'theme_location' => 'footer_ltr_two' ) ); ?>
-                    <?php endif; ?>
-                </div>
-                <div class="col-lg-3">
-                    <?php if ( has_nav_menu( 'footer_ltr_three' ) ) : ?>
-                        <?php wp_nav_menu( array( 'theme_location' => 'footer_ltr_three' ) ); ?>
-                    <?php endif; ?>
-                </div>
-                <div class="col-lg-3">
-                    <div class="well">
-                        <div id="footer-widget">
-                            <?php
-                            if(is_active_sidebar('footer-widget')){
-                                dynamic_sidebar('footer-widget');
-                            }
-                            ?>
-                        </div>
+
+        <?php
+        if(is_active_sidebar('footer-header-widget')){ ?>
+        <div class="row">
+            <div id="footer-header-widget">
+                <? dynamic_sidebar('footer-header-widget'); ?>
+            </div>
+        </div>
+        <? } ?>
+        <div class="row">
+            <div class="col-lg-12"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/envaris-logotype-white-h60.png" id="brand-logotype-footer"/></div>
+        </div>
+        <nav id="footer-nav" class="row">
+            <div class="col-lg-3">
+                <?php if ( has_nav_menu( 'footer_ltr_one' ) ) : ?>
+                    <?php wp_nav_menu( array( 'theme_location' => 'footer_ltr_one' ) ); ?>
+                <?php endif; ?>
+            </div>
+            <div class="col-lg-3">
+                <?php if ( has_nav_menu( 'footer_ltr_two' ) ) : ?>
+                    <?php wp_nav_menu( array( 'theme_location' => 'footer_ltr_two' ) ); ?>
+                <?php endif; ?>
+            </div>
+            <div class="col-lg-3">
+                <?php if ( has_nav_menu( 'footer_ltr_three' ) ) : ?>
+                    <?php wp_nav_menu( array( 'theme_location' => 'footer_ltr_three' ) ); ?>
+                <?php endif; ?>
+            </div>
+            <div class="col-lg-3">
+                <div class="well">
+                    <div id="footer-widget">
+                        <?php
+                        if(is_active_sidebar('footer-widget')){
+                            dynamic_sidebar('footer-widget');
+                        }
+                        ?>
                     </div>
                 </div>
-            </nav>
+            </div>
+        </nav>
     </footer>
     <!-- /FOOTER -->
 </div><!-- #page -->

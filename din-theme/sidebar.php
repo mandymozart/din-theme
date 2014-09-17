@@ -31,6 +31,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
     'walker'          => ''
     );
     ?>
+    <h2>Envaris</h2>
     <?php wp_nav_menu( $defaults ); ?>
     <?php dynamic_sidebar( 'sidebar-1' ); ?>
 </div><!-- #secondary -->

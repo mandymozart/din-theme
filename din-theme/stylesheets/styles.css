@@ -10,6 +10,7 @@
  1. Lists
  2. Widgets
  2.1. Language Selector
+ 2.2. Info Box
  3. Navigations
  3.1. On Site Navigation
  3.1.1. Back To Top Link
@@ -19,11 +20,18 @@
  4. Typography
  4.1. Styles
  4.2. Headings
+ 5. Page Related Styles
  */
 
 /* 0. Layout */
 #content {
     margin-top:100px;
+}
+#brand-logotype-footer {
+    margin-bottom: 20px;
+}
+#addthis-widget-2 {
+    margin-top: 32px;
 }
 
 /* 1. Lists */
@@ -37,6 +45,14 @@ nav ul {
 #polylang-4 ul {
     list-style: none;
     margin-top: 32px;
+}
+/* 2.2. Info Box */
+.widget.widget_text {
+    padding: 0 20px 20px 20px;
+    background: #fafa96;
+}
+.widget.widget_text h1 {
+    font-size: 18px;
 }
 
 /* 3. Navigations */
@@ -84,11 +100,16 @@ h1,h2,h3,h4,h5,h6 {
     font-family: DINNextMedium;
     text-transform: uppercase;
 }
-/* Links */
+/* 4.3. Links */
 a {
     color: #5ac4f0;
 }
 a:hover,
 a:focus {
     color: #ccc;
+}
+
+/* 5. Page Related Style */
+.home .entry-header {
+    display: none;
 }

@@ -37,13 +37,15 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/envaris-small.png" alt="<?php bloginfo( 'name' ); ?>" title="<?php bloginfo( 'name' ); ?>" id="brand-img" role="brand" /></a>
+                <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/envaris-logotype-blue-h30.png" alt="<?php bloginfo( 'name' ); ?>" title="<?php bloginfo( 'name' ); ?>" id="brand-img" role="brand" /></a>
             </div>
             <div class="collapse navbar-collapse">
                 <ul class="nav navbar-nav">
-                    <li class="active"></li>
-
-                    <li><a href="#contact">Contact</a></li>
+                    <li><?php
+                        if(is_active_sidebar('social-area')){
+                            dynamic_sidebar('social-area');
+                        }
+                        ?></li>
                     <li><?php
                     if(is_active_sidebar('language-selector')){
                         dynamic_sidebar('language-selector');

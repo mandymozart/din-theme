@@ -112,6 +112,15 @@ function din_theme_widgets_init() {
         'before_title' => '',
         'after_title' => '',
     ) );
+    register_sidebar( array(
+        'name' => 'Social Widget Area',
+        'id' => 'social-area',
+        'description' => 'Appears in the header nav area before the language selector',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '',
+        'after_title' => '',
+    ) );
 }
 add_action( 'widgets_init', 'din_theme_widgets_init' );
 
