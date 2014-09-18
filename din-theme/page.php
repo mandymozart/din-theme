@@ -11,7 +11,7 @@
  */
 
 get_header(); ?>
-    <div class="row row-offcanvas row-offcanvas-right">
+    <div class="row">
 
         <div id="primary" class="content-area">
             <main id="main" class="site-main col-xs-12 col-sm-9" role="main">

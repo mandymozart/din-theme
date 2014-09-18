@@ -10,7 +10,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 }
 ?>
 
-<div id="secondary" class="widget-area col-xs-6 col-sm-3 sidebar-offcanvas" role="complementary">
+<div id="secondary" class="widget-area col-xs-6 col-sm-3" role="complementary">
     <?
     $defaults = array(
     'theme_location'  => '',
@@ -31,6 +31,5 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
     'walker'          => ''
     );
     ?>
-    <h2>Envaris</h2>
     <?php dynamic_sidebar( 'sidebar-1' ); ?>
 </div><!-- #secondary -->
