@@ -1,0 +1,34 @@
+/* 3. Navigations */
+/* 3.1. On Site Naviation */
+/* 3.1.1. Back To Top */
+#nav-onsite {
+    position: fixed;
+    right: 15px;
+    bottom: 25px;
+}
+#nav-onsite ul {
+    margin:0;
+}
+#nav-onsite li a {
+    padding: 16px 33px 16px 33px;
+    background: #fff;
+}
+/* 3.1.2. Toggle Offcanvas */
+
+/* 3.2. Navigation Bar */
+.navbar {
+    background: #fff;
+    border-bottom: solid 1px #5ac4f0;
+}
+
+/* 3.3. Footer Navigation */
+.footer {
+    background: #5ac4f0;
+}
+.footer a{
+    color: #fff;
+}
+.footer a:hover,
+.footer a:focus {
+    color: #fafa96;
+}

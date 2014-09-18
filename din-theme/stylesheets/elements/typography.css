@@ -1,0 +1,19 @@
+/* 4. Typography */
+/* 4.1. Styles */
+b {
+    font-family: "DINNextMedium";
+}
+/* 4.2. Headings */
+h1,h2,h3,h4,h5,h6 {
+    font-family: "DINNextMedium";
+    text-transform: uppercase;
+    line-height: 1.25;
+}
+/* 4.3. Links */
+a {
+    color: #5ac4f0;
+}
+a:hover,
+a:focus {
+    color: #ccc;
+}

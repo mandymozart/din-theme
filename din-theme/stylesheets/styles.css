@@ -1,115 +1,19 @@
-@import "fonts.css";
+@import "elements/fonts.css";
 @import "../fonts/font-awesome/css/font-awesome.min.css";
-@import "bootstrap.min.css";
-@import "bootstrap-theme.css";
-@import "bootstrap-offcanvas.css";
-@import "layout.css";
+@import "bootstrap/bootstrap.min.css";
+@import "bootstrap/bootstrap-theme.css";
+@import "bootstrap/bootstrap-offcanvas.css";
+@import "elements/layout.css";
+@import "elements/lists.css";
+@import "elements/widgets.css";
+@import "elements/navigations.css";
+@import "elements/typography.css";
+@import "pages/home.css";
 
-/* Contents
- 0. Layout
- 1. Lists
- 2. Widgets
- 2.1. Language Selector
- 2.2. Info Box
- 3. Navigations
- 3.1. On Site Navigation
- 3.1.1. Back To Top Link
- 3.1.2. Toggle Offcanvas
- 3.2. Navigation Bar
- 3.3. Footer Navigation
- 4. Typography
- 4.1. Styles
- 4.2. Headings
- 5. Page Related Styles
- */
 
-/* 0. Layout */
-#content {
-    margin-top:100px;
-}
-#brand-logotype-footer {
-    margin-bottom: 20px;
-}
-#addthis-widget-2 {
-    margin-top: 32px;
-}
 
-/* 1. Lists */
-nav ul {
-    list-style: none;
-    padding-left:0;
-}
 
-/* 2. Widgets */
-/* 2.1. Langauge Selector (Navigaton) */
-#polylang-4 ul {
-    list-style: none;
-    margin-top: 32px;
-}
-/* 2.2. Info Box */
-.widget.widget_text {
-    padding: 0 20px 20px 20px;
-    background: #fafa96;
-}
-.widget.widget_text h1 {
-    font-size: 18px;
-}
 
-/* 3. Navigations */
-/* 3.1. On Site Naviation */
-/* 3.1.1. Back To Top */
-#nav-onsite {
-    position: fixed;
-    right: 15px;
-    bottom: 25px;
-}
-#nav-onsite ul {
-    margin:0;
-}
-#nav-onsite li a {
-    padding: 16px 33px 16px 33px;
-    background: #fff;
-}
-/* 3.1.2. Toggle Offcanvas */
 
-/* 3.2. Navigation Bar */
-.navbar {
-    background: #fff;
-    border-bottom: solid 1px #5ac4f0;
-}
 
-/* 3.3. Footer Navigation */
-.footer {
-    background: #5ac4f0;
-}
-.footer a{
-    color: #fff;
-}
-.footer a:hover,
-.footer a:focus {
-    color: #fafa96;
-}
 
-/* 4. Typography */
-/* 4.1. Styles */
-b {
-    font-family: DINNextMedium;
-}
-/* 4.2. Headings */
-h1,h2,h3,h4,h5,h6 {
-    font-family: DINNextMedium;
-    text-transform: uppercase;
-}
-/* 4.3. Links */
-a {
-    color: #5ac4f0;
-}
-a:hover,
-a:focus {
-    color: #ccc;
-}
-
-/* 5. Page Related Style */
-.home .entry-header {
-    display: none;
-}
