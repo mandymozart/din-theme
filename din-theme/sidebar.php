@@ -10,7 +10,7 @@ if ( ! is_active_sidebar( 'sidebar-1' ) ) {
 }
 ?>
 
-<div id="secondary" class="widget-area col-xs-6 col-sm-3" role="complementary">
+<div id="secondary" class="widget-area" role="complementary">
     <?
     $defaults = array(
     'theme_location'  => '',

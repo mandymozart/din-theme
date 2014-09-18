@@ -15,6 +15,7 @@
         <ul>
             <li><a href="#top"><span class="fa fa-chevron-up"></span></a></li>
         </ul>
+        <?php get_sidebar(); ?>
     </nav>
     <footer class="footer container-fluid" id="footer">
 

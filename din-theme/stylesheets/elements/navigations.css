@@ -24,7 +24,7 @@
 /* 2. Navigation Bar */
 .navbar {
     background: rgba(255,255,255,0.9);
-    border-bottom: solid 1px #5ac4f0;
+    border-bottom: solid 0px #5ac4f0;
 }
 .navbar-brand
 {
@@ -41,7 +41,10 @@
     padding-bottom: 10px;
     padding-top: 25px;
 }
-
+.navbar .navbar-ui {
+    height: 93px;
+    overflow: hidden;
+}
 /* 3. Footer Navigation */
 .footer {
     background: #5ac4f0;

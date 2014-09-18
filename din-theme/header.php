@@ -39,7 +39,7 @@
                 <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/envaris-logotype-blue-h30.png" alt="<?php bloginfo( 'name' ); ?>" title="<?php bloginfo( 'name' ); ?>" id="brand-img" role="brand" /></a>
             </div>
 
-            <div class="navbar-collapse collapse">
+            <div class="navbar-ui">
                 <ul class="nav navbar-nav navbar-left">
                     <li><a href="#mmenu" id="mm-toggle"><span class="fa fa-reorder fa-2x"></span></a></li>
                 </ul>
