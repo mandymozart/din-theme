@@ -2,6 +2,7 @@
  * 1. On Site Navigation
  * 2. Navigation Bar
  * 3. Footer Navigation
+ * 4. Mobile Menu
 */
 
 /* 1. On Site Naviation */
@@ -40,10 +41,15 @@
 .navbar .nav-icon a {
     padding-bottom: 10px;
     padding-top: 25px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
 .navbar .navbar-ui {
     height: 93px;
     overflow: hidden;
+}
+.navbar-nav.navbar-right:last-child {
+    margin-right: 5px;
 }
 /* 3. Footer Navigation */
 .footer {
@@ -56,3 +62,33 @@
 .footer a:focus {
     color: #fafa96;
 }
+
+/* 4. Mobile Menu */
+.mm-menu {
+    background: #fff !important;
+}
+.mm-menu .mm-list {
+    font-size: 1.25;
+}
+.mm-menu .mm-counter {
+    margin-top: -10px;
+    right: 60px;
+    font-family: "DINNextMedium";
+    font-size: 1.25em;
+    color: #fff !important;
+    background: #5ac4f0;
+    border-radius: 2px;
+    -moz-border-radius: 2px;
+    -webkit-border-radius: 2px;
+    padding: 0 6px 0 5px;
+}
+/* \f15c fa-file-text , \f097 fa-bookmark-o , \f067 fa-plus */
+/* em.mm-counter:after {
+    font-family: "FontAwesome";
+    content: "\f067";
+    margin-left: 5px;
+} */
+.mm-menu .mm-list > li.mm-selected > a:not(.mm-subopen), .mm-menu .mm-list > li.mm-selected > span, .current-menu-item a {
+    background: rgba(0, 0, 0, 0.02);
+}
+

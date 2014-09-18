@@ -44,6 +44,8 @@
                     <li><a href="#mmenu" id="mm-toggle"><span class="fa fa-reorder fa-2x"></span></a></li>
                 </ul>
                 <ul class="nav navbar-nav navbar-right">
+                    <li><?php pll_the_languages(array('hide_current'=>1));?>
+                    </li>
                     <li class="nav-icon"><a href="http://www.facebook.com/envaris"><span class="fa-stack fa-lg">
                       <i class="fa fa-square fa-stack-2x"></i>
                       <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
@@ -56,15 +58,13 @@
                       <i class="fa fa-square fa-stack-2x"></i>
                       <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
                     </span></a></li>
-                    <li><?php pll_the_languages();?>
-                    </li>
                 </ul>
             </div>
 
         </div>
     </div>
 
-    <div class="container-fluid" id="content" >
+    <div class="container" id="content" >
 
 
 
