@@ -1,6 +1,12 @@
-/* 3. Navigations */
-/* 3.1. On Site Naviation */
-/* 3.1.1. Back To Top */
+/* Navigations
+ * 1. On Site Navigation
+ * 2. Navigation Bar
+ * 3. Footer Navigation
+*/
+
+/* 1. On Site Naviation */
+
+/* 1.1. Back To Top */
 #nav-onsite {
     position: fixed;
     right: 15px;
@@ -13,15 +19,30 @@
     padding: 16px 33px 16px 33px;
     background: #fff;
 }
-/* 3.1.2. Toggle Offcanvas */
+/* 1.2. Toggle Offcanvas */
 
-/* 3.2. Navigation Bar */
+/* 2. Navigation Bar */
 .navbar {
-    background: #fff;
+    background: rgba(255,255,255,0.9);
     border-bottom: solid 1px #5ac4f0;
 }
+.navbar-brand
+{
+    position: absolute;
+    width: 100%;
+    left: 0;
+    text-align: center;
+    margin: auto;
+}
+.navbar #mm-toogle {
 
-/* 3.3. Footer Navigation */
+}
+.navbar .nav-icon a {
+    padding-bottom: 10px;
+    padding-top: 10px;
+}
+
+/* 3. Footer Navigation */
 .footer {
     background: #5ac4f0;
 }

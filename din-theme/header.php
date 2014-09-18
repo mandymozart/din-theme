@@ -30,29 +30,37 @@
 
     <div class="navbar navbar-fixed-top" role="navigation">
         <div class="container-fluid">
+
             <div class="navbar-header">
                 <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="fa fa-reorder fa-2x"></span>
                 </button>
-                <a href="#mmenu"><span class="fa fa-reorder fa-2x"></span></a>
                 <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/envaris-logotype-blue-h30.png" alt="<?php bloginfo( 'name' ); ?>" title="<?php bloginfo( 'name' ); ?>" id="brand-img" role="brand" /></a>
             </div>
-            <div class="collapse navbar-collapse">
-                <ul class="nav navbar-nav">
-                    <li><?php
-                        if(is_active_sidebar('social-area')){
-                            dynamic_sidebar('social-area');
-                        }
-                        ?></li>
-                    <li><?php
-                    if(is_active_sidebar('language-selector')){
-                        dynamic_sidebar('language-selector');
-                    }
-                    ?>
+
+            <div class="navbar-collapse collapse">
+                <ul class="nav navbar-nav navbar-left">
+                    <li><a href="#mmenu" id="mm-toggle"><span class="fa fa-reorder fa-2x"></span></a></li>
+                </ul>
+                <ul class="nav navbar-nav navbar-right">
+                    <li class="nav-icon"><a href="http://www.facebook.com/envaris"><span class="fa-stack fa-lg">
+                      <i class="fa fa-square fa-stack-2x"></i>
+                      <i class="fa fa-facebook fa-stack-1x fa-inverse"></i>
+                    </span></a></li>
+                    <li class="nav-icon"><a href="http://www.twitter.com/envaris"><span class="fa-stack fa-lg">
+                      <i class="fa fa-square fa-stack-2x"></i>
+                      <i class="fa fa-twitter fa-stack-1x fa-inverse"></i>
+                    </span></a></li>
+                    <li class="nav-icon"><a href="http://plus.google.com/envaris"><span class="fa-stack fa-lg">
+                      <i class="fa fa-square fa-stack-2x"></i>
+                      <i class="fa fa-google-plus fa-stack-1x fa-inverse"></i>
+                    </span></a></li>
+                    <li><?php pll_the_languages();?>
                     </li>
                 </ul>
-            </div><!--/.nav-collapse -->
+            </div>
+
         </div>
     </div>
 
