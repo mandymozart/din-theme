@@ -6,7 +6,7 @@ Clean Bootstrap Word Press Theme
 Getting Started
 ---------------
 
-stefan branch test  
+stefan branch test
 
 
 
