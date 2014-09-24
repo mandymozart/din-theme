@@ -5,7 +5,7 @@
       <paths name="dev-envaris.shalomsalon.de din-theme">
         <serverdata>
           <mappings>
-            <mapping deploy="/wordpress/wp-content/themes/din-theme" local="$PROJECT_DIR$/din-theme" web="/" />
+            <mapping deploy="/wordpress/wp-content/themes/din-theme" local="$PROJECT_DIR$/" web="/" />
           </mappings>
         </serverdata>
       </paths>

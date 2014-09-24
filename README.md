@@ -6,8 +6,9 @@ Clean Bootstrap Word Press Theme
 Getting Started
 ---------------
 
-- Tilman
+Version Details:
 
+- Tilman Private Testing Main Branch
 
 
 
