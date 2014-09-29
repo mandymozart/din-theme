@@ -1,9 +1,9 @@
 @charset "UTF-8";
 @font-face {
     font-family: "DINNextLight";
-    src: url('/wp-content/themes/din-theme/fonts/dinnextrounded/DINNextRoundedLTW01-Lig.woff') format('woff'), url('/fonts/dinnextrounded/DINNextRoundedLTW01-Lig.ttf') format('truetype');
+    src: url('/projects/dev-envaris-wp/wp-content/themes/din-theme/fonts/dinnextrounded/DINNextRoundedLTW01-Lig.woff') format('woff'), url('/fonts/dinnextrounded/DINNextRoundedLTW01-Lig.ttf') format('truetype');
 }
 @font-face {
     font-family: "DINNextMedium";
-    src: url('/wp-content/themes/din-theme/fonts/dinnextrounded/DINNextRoundedLTW01-Med.woff') format('woff'), url('/fonts/dinnextrounded/DINNextRoundedLTW01-Med.ttf') format('truetype');
+    src: url('/projects/dev-envaris-wp/wp-content/themes/din-theme/fonts/dinnextrounded/DINNextRoundedLTW01-Med.woff') format('woff'), url('/fonts/dinnextrounded/DINNextRoundedLTW01-Med.ttf') format('truetype');
 }

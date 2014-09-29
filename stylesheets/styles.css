@@ -1,5 +1,6 @@
 @import "elements/fonts.css";/*fonts url still in local path - SB-EDIT*/
 @import "../fonts/font-awesome/css/font-awesome.min.css";
+@import "elements/ninja-forms.css";
 @import "bootstrap/bootstrap.min.css";
 @import "bootstrap/bootstrap-theme.css";
 

@@ -1,0 +1,41 @@
+.ninja-forms-cont {
+    margin: auto;
+    padding: 0 0 0 20px;
+
+}
+
+.ninja-forms-cont ul {
+
+    padding: 0;
+}
+
+.ninja-forms-cont ul li{
+
+    list-style-type: none;
+}
+
+.ninja-forms-cont input[type="radio"], .ninja-forms-cont input[type="checkbox"]{
+
+   margin: 0 20px 0 0;
+}
+.ninja-forms-cont input[type="submit"]{
+
+    margin: 20px 0 20px 0;
+}
+
+.field-wrap {
+
+float: ;
+}
+
+.field-wrap label{
+
+    width: 100%;
+
+}
+
+.ninja-forms-field {
+
+    float: ;
+}
+

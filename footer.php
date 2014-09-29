@@ -60,7 +60,7 @@
         </nav>
     </footer>
     <!-- /FOOTER -->
-</div><!-- #page -->
+</div><!--page -->
 
 <!-- Include all compiled plugins (below), or include individual files as needed -->
 <script src="<?php echo get_stylesheet_directory_uri(); ?>/js/bootstrap.min.js"></script>
