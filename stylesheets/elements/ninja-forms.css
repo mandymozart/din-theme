@@ -18,6 +18,10 @@
 
    margin: 0 20px 0 0;
 }
+.ninja-forms-cont input[type="checkbox"]{
+
+  width: auto!important;
+}
 .ninja-forms-cont input[type="submit"]{
 
     margin: 20px 0 20px 0;
@@ -25,7 +29,7 @@
 
 .field-wrap {
 
-float: ;
+
 }
 
 .field-wrap label{
@@ -36,6 +40,11 @@ float: ;
 
 .ninja-forms-field {
 
-    float: ;
+    width: 389px;
 }
 
+.state, .country{
+height: 34px;
+padding-top: 1px;
+padding-bottom: 1px;
+}

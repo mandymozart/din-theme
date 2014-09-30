@@ -65,7 +65,7 @@
         </div>
     </div>
 
-    <div class="container" id="content" >
+    <div class="container-fluid" id="content" >
 
 
 
