@@ -1,6 +1,10 @@
+
+
+/*custom forms CSS - SB-EDIT*/
+
 .ninja-forms-cont {
     margin: auto;
-    padding: 0 0 0 20px;
+   /* padding: 0 0 0 20px;*/
 
 }
 
@@ -20,7 +24,8 @@
 }
 .ninja-forms-cont input[type="checkbox"]{
 
-  width: auto!important;
+  width: auto;
+    min-width: 10px;
 }
 .ninja-forms-cont input[type="submit"]{
 
@@ -40,11 +45,34 @@
 
 .ninja-forms-field {
 
-    width: 389px;
+    padding: 6px;
+    width: 100%;
+    margin:10px 0 10px 0;
+
+    background-color: #A0A0A0;
+    color: #ffffff;
+    border: none ;
 }
 
-.state, .country{
+input[type="submit"]{
+
+    background-color: #ffffff;
+    color: #000000;
+
+
+}
+input[type="submit"]:hover{
+
+    background-color: #e2e2e2;
+    color: #ffffff;
+
+
+}
+
+.state, .country, .ninja-forms-req{
 height: 34px;
 padding-top: 1px;
 padding-bottom: 1px;
 }
+
+/*custom forms CSS - END - SB-EDIT*/

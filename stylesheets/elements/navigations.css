@@ -26,6 +26,9 @@
 .navbar {
     background: rgba(255,255,255,0.9);
     border-bottom: solid 0px #5ac4f0;
+
+    padding-left: 15px; /*SB-EDIT*/
+    padding-right: 15px; /*SB-EDIT*/
 }
 .navbar-brand
 {
