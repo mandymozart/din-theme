@@ -34,8 +34,8 @@
 {
     position: absolute;
     width: 100%;
-    left: 0;
-    text-align: center;
+    left: 17px;
+    text-align: left;
     margin: auto;
 }
 .navbar #mm-toogle {
@@ -94,4 +94,3 @@
 .mm-menu .mm-list > li.mm-selected > a:not(.mm-subopen), .mm-menu .mm-list > li.mm-selected > span, .current-menu-item a {
     background: rgba(0, 0, 0, 0.02);
 }
-

@@ -17,3 +17,10 @@
     text-align: center;
 }
 
+/* Recent Posts Blog from VC */
+.teaser_grid_container .isotope h2 {
+
+}
+.teaser_grid_container .isotope-item h2 {
+    font-size: 1.25em;
+}

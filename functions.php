@@ -45,6 +45,11 @@ function din_theme_setup() {
 		'primary' => __( 'Primary Menu', 'din-theme' ),
 	) );
 
+    register_nav_menus( array(
+        'quick-menu' => 'Quick Access Menu',
+        'quick-menu' => 'Quick Access Menu in Header',
+    ) );
+
 	/*
 	 * Switch default core markup for search form, comment form, and comments
 	 * to output valid HTML5.
@@ -115,6 +120,15 @@ function din_theme_widgets_init() {
     register_sidebar( array(
         'name' => 'Social Widget Area',
         'id' => 'social-area',
+        'description' => 'Appears in the header nav area before the language selector',
+        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
+        'after_widget' => '</aside>',
+        'before_title' => '',
+        'after_title' => '',
+    ) );
+    register_sidebar( array(
+        'name' => 'Hotline Area',
+        'id' => 'hotline-area',
         'description' => 'Appears in the header nav area before the language selector',
         'before_widget' => '<aside id="%1$s" class="widget %2$s">',
         'after_widget' => '</aside>',

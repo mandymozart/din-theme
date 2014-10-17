@@ -33,18 +33,38 @@
         <div class="container-fluid">
 
             <div class="navbar-header">
-                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="fa fa-reorder fa-2x"></span>
-                </button>
                 <a class="navbar-brand" href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/images/envaris-logotype-blue-h30.png" alt="<?php bloginfo( 'name' ); ?>" title="<?php bloginfo( 'name' ); ?>" id="brand-img" role="brand" /></a>
             </div>
 
             <div class="navbar-ui">
-                <ul class="nav navbar-nav navbar-left">
+                <ul class="nav navbar-nav navbar-left visible-xs visible-sm">
                     <li><a href="#mmenu" id="mm-toggle"><span class="fa fa-reorder fa-2x"></span></a></li>
                 </ul>
-                <ul class="nav navbar-nav navbar-right">
+                <ul class="nav navbar-nav navbar-right hidden-xs hidden-sm">
+                    <?php
+
+                    $defaults = array(
+                        'theme_location'  => 'quick-menu',
+                        'menu'            => '',
+                        'container'       => false,
+                        'container_class' => '',
+                        'container_id'    => '',
+                        'menu_class'      => 'menu',
+                        'menu_id'         => '',
+                        'echo'            => true,
+                        'fallback_cb'     => 'wp_page_menu',
+                        'before'          => '',
+                        'after'           => '',
+                        'link_before'     => '',
+                        'link_after'      => '',
+                        'items_wrap'      => '%3$s',
+                        'depth'           => 0,
+                        'walker'          => ''
+                    );
+
+                    wp_nav_menu( $defaults );
+
+                    ?>
                     <li><?php pll_the_languages(array('hide_current'=>1));?>
                     </li>
                     <li class="nav-icon"><a href="http://www.facebook.com/envaris"><span class="fa-stack fa-lg">

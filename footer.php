@@ -12,11 +12,12 @@
 
     <!-- FOOTER -->
     <nav id="nav-onsite" class="mm-fixed-bottom">
+        <div id="hotline-widget"><? dynamic_sidebar('hotline-widget'); ?></div>
         <ul>
             <li><a href="#top"><span class="fa fa-chevron-up"></span></a></li>
         </ul>
-        <?php get_sidebar(); ?>
     </nav>
+    <?php get_sidebar(); ?>
     <footer class="footer container-fluid" id="footer">
 
         <?php
@@ -47,14 +48,12 @@
                 <?php endif; ?>
             </div>
             <div class="col-lg-3">
-                <div class="well">
-                    <div id="footer-widget">
-                        <?php
-                        if(is_active_sidebar('footer-widget')){
-                            dynamic_sidebar('footer-widget');
-                        }
-                        ?>
-                    </div>
+                <div id="footer-widget" class="well">
+                    <?php
+                    if(is_active_sidebar('footer-widget')){
+                        dynamic_sidebar('footer-widget');
+                    }
+                    ?>
                 </div>
             </div>
         </nav>

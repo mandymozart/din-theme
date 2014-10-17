@@ -17,3 +17,8 @@ a:hover,
 a:focus {
     color: #ccc;
 }
+
+strong {
+    font-weight: normal;
+    color: #5ac4f0;
+}
