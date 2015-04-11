@@ -1,0 +1,147 @@
+/* Cart */
+/* 1. Layout */
+.woocommerce-cart section,
+.woocommerce-cart .section {
+    width: 466px;
+}
+/* 2. Toggle */
+#cart-toggle {
+    position: fixed;
+    top: 0;
+    right: 22px;
+    color: #fff;
+    text-align: center;
+    background: #d71921;
+    text-decoration: none;
+    padding: 24px 24px 11px;
+    z-index: 1040;
+    word-spacing: 11px;
+    outline: none;
+}
+#cart-toggle span {
+    font-size: 20px;
+}
+#cart-toggle img {
+    margin-bottom: 10px;
+}
+#cart-toggle:active {
+
+}
+#cart-toggle:visited {
+
+}
+#cart-toggle:hover {
+    text-decoration: none;
+    color: #0061dd;
+}
+
+/* 3. Listings */
+#shipping_method {
+    list-style: none;
+}
+th { /* get all headers to the right like shipping and total */
+    text-align: right;
+    vertical-align: top;
+}
+.woocommerce-ordering {
+    display:none;
+}
+.modal-cart .modal-dialog .modal-content {
+    background: url('../../images/background.jpg'); /* 99% 20% */
+    border: 2px #d71921 solid;
+    box-shadow: 0px 0px 30px rgba(0,0,0,0.2);
+    color: #fff;
+}
+.modal-header {
+    border: 0;
+}
+.modal-cart .modal-dialog .modal-title {
+    text-align: center;
+    letter-spacing: 0.1em;
+}
+.modal-cart .shipping,
+.modal-cart .order-total {
+    display: none;
+}
+.cart {
+    width: 100%;
+}
+.cart .product-subtotal,
+.cart .product-quantity
+{
+    text-align: right;
+}
+.cart .product-name a {
+    font-weight: 700;
+}
+.cart .actions {
+    text-align: right;
+}
+.cart-collaterals,
+.cart-collaterals table {
+    text-align: right;
+    width: 100%;
+}
+.cart-collaterals table th {
+    text-align: right;
+}
+.cart .order-total {
+    color: #fff;
+}
+.cart-collaterals:after {
+    content:'';
+    display:block;
+    clear: both;
+}
+input.qty {
+    border: 0;
+    background: transparent;
+    width: 3em;
+}
+.cart-empty {
+    text-align: center;
+}
+.return-to-shop {
+    display: none;
+}
+.close {
+    color: white;
+    opacity: 0.7;
+}
+.close:hover,
+.close:focus {
+    color: white;
+    opacity: 1;
+}
+.modal-cart .modal-dialog {
+    width: 600px;
+    margin: 70px auto;
+}
+.attribute-label {
+    display: none;
+}
+.attribute-value {
+    color: white;
+}
+.modal-cart .product-price {
+    text-align: right;
+}
+.modal-cart .product-quantity {
+    width: 111px;
+}
+/* 2. Font Awesome Buttons */
+.modal-cart .fa {
+    color: white;
+}
+.modal-cart .fa:hover,
+.modal-cart .fa:focus {
+    color: #ccc;
+}
+
+/* 3. Change State of Cart */
+#cartChangedAsteriks {
+    display: none;
+}
+.modal-cart .update-button {
+    display: none;
+}

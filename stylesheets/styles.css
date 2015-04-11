@@ -1,8 +1,10 @@
-@import "elements/fonts.css";
+@import "elements/fonts.css";/*fonts url still in local path - SB-EDIT*/
 @import "../fonts/font-awesome/css/font-awesome.min.css";
-@import "bootstrap/bootstrap.min.css";
+@import "bootstrap/bootstrap.css";
 @import "bootstrap/bootstrap-theme.css";
-@import "bootstrap/bootstrap-offcanvas.css";
+@import "bootstrap/bootstrap-spinedit.css";
+
+@import "elements/page.css";
 @import "elements/layout.css";
 @import "elements/lists.css";
 @import "elements/widgets.css";
@@ -10,5 +12,15 @@
 @import "elements/typography.css";
 @import "pages/home.css";
 
+@import "woocommerce/products.css";
+@import "woocommerce/cart.css";
+@import "woocommerce/notices.css";
+@import "woocommerce/checkout.css";
 
 
+
+/*visual-composer CSS - SB-EDIT*/
+/*@import "../../../plugins/js_composer/assets/css/js_composer_front.css";*/
+
+/*mm-menu CSS - SB-EDIT*/
+/*@import "../../../plugins/wp-mmenu-lite/css/jquery.mmenu.all.css";*/

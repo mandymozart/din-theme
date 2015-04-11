@@ -1,0 +1,78 @@
+
+
+/*custom forms CSS - SB-EDIT*/
+
+.ninja-forms-cont {
+    margin: auto;
+  /*padding: 0 0 0 20px;*/
+
+}
+
+.ninja-forms-cont ul {
+
+    padding: 0;
+}
+
+.ninja-forms-cont ul li{
+
+    list-style-type: none;
+}
+
+.ninja-forms-cont input[type="radio"], .ninja-forms-cont input[type="checkbox"]{
+
+   margin: 0 20px 0 0;
+}
+.ninja-forms-cont input[type="checkbox"]{
+
+  width: auto;
+    min-width: 10px;
+}
+.ninja-forms-cont input[type="submit"]{
+
+    margin: 20px 0 20px 0;
+}
+
+.field-wrap {
+
+
+}
+
+.field-wrap label{
+
+    width: 100%;
+
+}
+
+.ninja-forms-field {
+
+    padding: 6px;
+    width: 100%;
+    margin:10px 0 10px 0;
+
+    background-color: #A0A0A0;
+    color: #ffffff;
+    border: none ;
+}
+
+input[type="submit"]{
+
+    background-color: #ffffff;
+    color: #000000;
+
+
+}
+input[type="submit"]:hover{
+
+    background-color: #e2e2e2;
+    color: #ffffff;
+
+
+}
+
+.state, .country, .ninja-forms-req{
+height: 34px;
+padding-top: 1px;
+padding-bottom: 1px;
+}
+
+/*custom forms CSS - END - SB-EDIT*/

@@ -1,11 +1,65 @@
 /* Layout */
+body {
+    background: #ccc;
+    overflow-x: hidden;
+}
+.page {
+    margin-top: 0;
+    z-index: 10;
+}
 #content {
-    margin-top:100px;
+    width: 1024px;
+}
+.container-fluid {
+    margin-right: auto;
+    margin-left: auto;
+    padding-left: 22px;
+    padding-right: 22px;
 }
 #brand-logotype-footer {
     margin-bottom: 20px;
 }
-#addthis-widget-2 {
-    margin-top: 32px;
+#layout-background-colomn {
+    position: fixed;
+    background: #000;
+    top:0;
+    left:0;
+    bottom:0;
+    width: 512px;
+    z-index: 2;
+}
+#layout-background-canvas {
+    position: fixed;
+    background: #fff;
+    top:0;
+    left:0;
+    bottom:0;
+    width: 1024px;
+    z-index: 1;
+}
+#layout-background-image {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+#layout-background-page {
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    z-index: 3;
+}
+.stretch {
+    width:100%;
+    height:100%;
+}
+
+/* 3. Footer Navigation */
+.footer {
+    background: transparent;
+    width: 1024px;
 }
 

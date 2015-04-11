@@ -1,0 +1,72 @@
+.product {
+    width: 468px;
+    margin-bottom: 40px; /* why not working */
+}
+.product.inverse a,
+.product.inverse h3,
+.product.inverse .product-description,
+.product.inverse .product-credits {
+    color: #bbb;
+}
+/* use this section
+for alternating colors without the need of masonry
+(all products same height, no reshuffling  needed
+
+.product:nth-child(even) {
+    margin-right: 0;
+    color:#000;
+}
+.product:nth-child(even) a,
+.product:nth-child(even) h3,
+.product:nth-child(even) .product-description,
+.product:nth-child(even) .product-credits {
+    color:#000;
+}
+.product:nth-child(even) a:hover {
+    color: #888;
+}
+*/
+.product a {
+    text-decoration: underline;
+}
+.product h3 {
+    margin-top:0;
+}
+.product h3 a {
+    font-weight: 700;
+    text-decoration: none;
+}
+.product h3 a:hover {
+    text-decoration: none;
+}
+
+.product .product-description {
+    margin-bottom: 14px;
+}
+.product .product-credits,
+.product .price {
+    font-size: 12px;
+    line-height: 18px;
+}
+.product .product-credits {
+    margin-bottom: -2px;
+}
+.product .add_to_cart_button {
+    margin-right: 10px;
+}
+
+/* Preview Gallery */
+.product .product-preview-gallery {
+    float:right;
+    margin-bottom: 22px;
+    margin-left: -30px;
+}
+.product .product-preview-gallery:after {
+    content:'';
+    display:block;
+    clear: both;
+}
+.product .product-preview-gallery li {
+    display:block;
+    cursor: pointer;
+}

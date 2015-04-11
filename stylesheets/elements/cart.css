@@ -1,0 +1,8 @@
+.widget-cart {
+    width: 512px;
+    position: fixed;
+    top: 0;
+    right: 100px;
+    background: url('../../images/background.jpg') center fixed;
+    z-index: 9999999;
+}

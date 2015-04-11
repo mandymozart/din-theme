@@ -1,19 +1,57 @@
 /* 4. Typography */
 /* 4.1. Styles */
-b {
-    font-family: "DINNextMedium";
+p, b, h1, h2, h3, h4, h5, h6, div, caption, i, a {
+    color: #fff;
+    font-family: "Arimo", sans-serif;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: 400;
 }
 /* 4.2. Headings */
 h1,h2,h3,h4,h5,h6 {
-    font-family: "DINNextMedium";
-    text-transform: uppercase;
-    line-height: 1.25;
+    font-family: "Arimo", sans-serif;
+    /* text-transform: uppercase; */
+    line-height: 20px;
+    font-weight: 700;
+}
+p {
+    font-size: 12px;
+    line-height: 20px;
 }
 /* 4.3. Links */
 a {
-    color: #5ac4f0;
+    text-transform: uppercase;
+    color: #fff;
+    text-decoration: underline;
 }
 a:hover,
 a:focus {
     color: #ccc;
+}
+p, div, ul {
+    color: #ccc;
+}
+/* 4.4. Inversion */
+.inverse-color p,
+.inverse-color b,
+.inverse-color h1,
+.inverse-color h2,
+.inverse-color h3,
+.inverse-color h4,
+.inverse-color h5,
+.inverse-color h6,
+.inverse-color div,
+.inverse-color caption,
+.inverse-color i,
+.inverse-color a {
+    color: #000;
+}
+
+/* 5. Footer */
+.footer h3 a {
+    font-size: 12px;
+    font-weight: 300;
+}
+.footer h3 a:hover {
+    color: #9b9b9b;
 }

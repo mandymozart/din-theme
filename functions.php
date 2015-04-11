@@ -6,7 +6,7 @@
  */
 
 /**
- * Set the content width based on the theme's design and stylesheet.
+ * Set the content width based on the theme's design and stylesheet. ????
  */
 if ( ! isset( $content_width ) ) {
 	$content_width = 640; /* pixels */
@@ -76,51 +76,17 @@ add_action( 'after_setup_theme', 'din_theme_setup' );
  * @link http://codex.wordpress.org/Function_Reference/register_sidebar
  */
 function din_theme_widgets_init() {
-	register_sidebar( array(
-		'name'          => __( 'Sidebar', 'din-theme' ),
-		'id'            => 'sidebar-1',
-		'description'   => '',
-		'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-		'after_widget'  => '</aside>',
-		'before_title'  => '<h1 class="widget-title">',
-		'after_title'   => '</h1>',
-	) );
+
     register_sidebar( array(
-        'name' => 'Footer Header Area',
-        'id' => 'footer-header-widget',
-        'description' => 'First things to appear in footer',
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget' => '</aside>',
+        'name' => 'Checkout Page Ads',
+        'id' => 'checkoutWidget',
+        'description' => 'Place for Ads in the checkout page.',
+        'before_widget' => '<widget id="%1$s" class="widget widget-checkout%2$s">',
+        'after_widget' => '</widget>',
         'before_title' => '<h3 class="widget-title">',
         'after_title' => '</h3>',
     ) );
-    register_sidebar( array(
-        'name' => 'Footer Widget Area',
-        'id' => 'footer-widget',
-        'description' => 'Appears in the footer area on the right',
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget' => '</aside>',
-        'before_title' => '<h3 class="widget-title">',
-        'after_title' => '</h3>',
-    ) );
-    register_sidebar( array(
-        'name' => 'Language Selector Widget Area',
-        'id' => 'language-selector',
-        'description' => 'Appears in the header nav area',
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget' => '</aside>',
-        'before_title' => '',
-        'after_title' => '',
-    ) );
-    register_sidebar( array(
-        'name' => 'Social Widget Area',
-        'id' => 'social-area',
-        'description' => 'Appears in the header nav area before the language selector',
-        'before_widget' => '<aside id="%1$s" class="widget %2$s">',
-        'after_widget' => '</aside>',
-        'before_title' => '',
-        'after_title' => '',
-    ) );
+
 }
 add_action( 'widgets_init', 'din_theme_widgets_init' );
 
@@ -129,12 +95,14 @@ add_action( 'widgets_init', 'din_theme_widgets_init' );
  */
 function din_theme_scripts() {
 	wp_enqueue_style( 'din-theme-style', get_stylesheet_uri() );
-
+    wp_deregister_script('jquery');
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
 		wp_enqueue_script( 'comment-reply' );
 	}
 }
+
 add_action( 'wp_enqueue_scripts', 'din_theme_scripts' );
+
 
 /**
  * Implement the Custom Header feature.
@@ -165,3 +133,57 @@ require get_template_directory() . '/inc/jetpack.php';
  * Remove Admin Bar from Frontend
  */
 add_filter('show_admin_bar', '__return_false');
+
+
+/**
+ * Remove WooCommerce Styles
+ */
+add_filter( 'woocommerce_enqueue_styles', '__return_false' );
+
+function din_theme_clean_text($content){
+    return "echo";
+    // return preg_replace("/\r\n|\r|\n/",'<br/>',wp_strip_all_tags($content));
+}
+
+/**
+ * Remove QTY HTML5 for bootstrap-spinedit.js
+ */
+
+function woocommerce_quantity_input($data) {
+    global $product;
+
+    $defaults = array(
+        'input_name'    => $data['input_name'],
+        'input_value'   => $data['input_value'],
+        'max_value'  	=> apply_filters( 'woocommerce_quantity_input_max', '', $product ),
+        'min_value'  	=> apply_filters( 'woocommerce_quantity_input_min', '', $product ),
+        'step' 		=> apply_filters( 'woocommerce_quantity_input_step', '1', $product ),
+        'style'		=> apply_filters( 'woocommerce_quantity_style', 'float:left; margin-right:10px;', $product )
+    );
+    if ( ! empty( $defaults['min_value'] ) )
+        $min = $defaults['min_value'];
+    else $min = 1;
+
+    if ( ! empty( $defaults['max_value'] ) )
+        $max = $defaults['max_value'];
+    else $max = 20;
+
+    if ( ! empty( $defaults['step'] ) )
+        $step = $defaults['step'];
+    else $step = 1;
+
+    echo '<input type="text" value="'.$defaults['input_value'].'" name="' . esc_attr( $defaults['input_name'] ) . '" title="' . _x( 'Qty', 'Product quantity input tooltip', 'woocommerce' ) . '" class="input-text qty text noSelect">';
+}
+
+
+/* Rewrite Add-To-Cart-Button to redirect to shop mainpage */
+add_filter( 'woocommerce_add_to_cart_redirect', 'custom_add_to_cart_redirect' );
+
+function custom_add_to_cart_redirect() {
+    /**
+     * Replace with the url of your choosing
+     * e.g. return 'http://www.yourshop.com/'
+     */
+    //return get_permalink( get_option('woocommerce_checkout_page_id') );
+    return the_site_url();
+}

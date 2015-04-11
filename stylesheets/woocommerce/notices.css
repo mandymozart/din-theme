@@ -1,0 +1,27 @@
+.woocommerce-info,
+.woocommerce-message,
+.woocommerce-error {
+    position: fixed;
+    top: 0;
+    right: 105px;
+    z-index: 999999999;
+    padding: 24px;
+    color: #13E400;
+    text-align: right;
+    width: 210px;
+    height: 113px;
+    z-index: 1040;
+    border: 1px solid;
+    border-right: 0;
+    border-top: 0;
+    background: rgba(255, 255, 255, 0.96);
+}
+.woocommerce-error {
+    color: #f00;
+}
+.woocommerce-info {
+    color: #ff0;
+}
+.woocommerce-message a {
+    display: none;
+}

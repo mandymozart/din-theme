@@ -2,7 +2,7 @@
  * 1. On Site Navigation
  * 2. Navigation Bar
  * 3. Footer Navigation
- * 4. Mobile Menu
+ * 4. Cart
 */
 
 /* 1. On Site Naviation */
@@ -18,25 +18,31 @@
 }
 #nav-onsite li a {
     padding: 16px 33px 16px 33px;
-    background: #fff;
 }
-/* 1.2. Toggle Offcanvas */
 
 /* 2. Navigation Bar */
 .navbar {
-    background: rgba(255,255,255,0.9);
-    border-bottom: solid 0px #5ac4f0;
+    background: transparent;
+    border-bottom: solid 0px #000000;
+    min-height: 48px;
+    z-index: 3;
 }
 .navbar-brand
 {
+    text-decoration: none;
     position: absolute;
-    width: 100%;
+    padding: 22px 22px !important;
+    padding-bottom: 0;
+    height: 48px;
     left: 0;
-    text-align: center;
+    text-align: left;
     margin: auto;
+    color: #fff;
+    letter-spacing: 0.5em;
+    font-weight: 700;
 }
-.navbar #mm-toogle {
-
+.navbar-brand img {
+    margin-left: 47px;
 }
 .navbar .nav-icon a {
     padding-bottom: 10px;
@@ -51,44 +57,9 @@
 .navbar-nav.navbar-right:last-child {
     margin-right: 5px;
 }
-/* 3. Footer Navigation */
-.footer {
-    background: #5ac4f0;
+.back-to-top {
+    color: #9b9b9b;
 }
-.footer a{
-    color: #fff;
+.back-to-top:hover {
+    color: #000;
 }
-.footer a:hover,
-.footer a:focus {
-    color: #fafa96;
-}
-
-/* 4. Mobile Menu */
-.mm-menu {
-    background: #fff !important;
-}
-.mm-menu .mm-list {
-    font-size: 1.25;
-}
-.mm-menu .mm-counter {
-    margin-top: -10px;
-    right: 60px;
-    font-family: "DINNextMedium";
-    font-size: 1.25em;
-    color: #fff !important;
-    background: #5ac4f0;
-    border-radius: 2px;
-    -moz-border-radius: 2px;
-    -webkit-border-radius: 2px;
-    padding: 0 6px 0 5px;
-}
-/* \f15c fa-file-text , \f097 fa-bookmark-o , \f067 fa-plus */
-/* em.mm-counter:after {
-    font-family: "FontAwesome";
-    content: "\f067";
-    margin-left: 5px;
-} */
-.mm-menu .mm-list > li.mm-selected > a:not(.mm-subopen), .mm-menu .mm-list > li.mm-selected > span, .current-menu-item a {
-    background: rgba(0, 0, 0, 0.02);
-}
-
